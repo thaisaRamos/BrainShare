@@ -35,7 +35,7 @@ public class TagsController {
 	public String save() throws TagException, DAOException{
 		try {
 			service.searchTag(tag.getName());
-			FacesMessage msg = new FacesMessage("Tag ja existe.");
+			FacesMessage msg = new FacesMessage("this tag already exists.");
 			FacesContext.getCurrentInstance().addMessage("erro", msg);
 			return null;
 		}

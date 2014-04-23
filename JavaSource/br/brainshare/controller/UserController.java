@@ -48,11 +48,11 @@ public class UserController implements Serializable {
 		try {
 			if (!user.getPassword().equals(passwordVal) || service.findUser(user)) {
 				if(!user.getPassword().equals(passwordVal)){
-					FacesMessage msg = new FacesMessage("Senhas diferentes");
+					FacesMessage msg = new FacesMessage("Different password");
 					FacesContext.getCurrentInstance().addMessage("erro", msg);
 					
 				} else {
-					FacesMessage msg = new FacesMessage("Já existe um usuário com esse email");
+					FacesMessage msg = new FacesMessage("It already exist one user with this name");
 					FacesContext.getCurrentInstance().addMessage("erro", msg);
 				}
 				return null;
