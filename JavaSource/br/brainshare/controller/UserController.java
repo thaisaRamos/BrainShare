@@ -81,7 +81,7 @@ public class UserController implements Serializable {
  
 			} else {
 				/* Cria uma mensagem. */
-				FacesMessage msg = new FacesMessage("Usuário ou senha inválido!");
+				FacesMessage msg = new FacesMessage("User or password is invalid");
 				/*
 				 * Obtém a instancia atual do FacesContext e adiciona a mensagem de
 				 * erro nele.

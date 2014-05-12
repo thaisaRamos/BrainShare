@@ -60,7 +60,7 @@ public class LoginFilter implements Filter {
                 System.out.println(">>>>>> " + user);
 
             }
-            // entrega a requisição para o proximo filtro  
+            // entrega a requisição para o proximo filtro
             chain.doFilter(request, response);
         }
 }
